@@ -1,0 +1,147 @@
+.homes {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  align-items: center;
+}
+.homes_tablet-1 {
+  display: none;
+}
+.homes_tablet-2 {
+  display: none;
+}
+.homes_phone-1 {
+  display: none;
+}
+.homes_phone-2 {
+  display: none;
+}
+.homes_img-rectange {
+  position: absolute;
+  left: -20%;
+  bottom: 0;
+}
+.imgs {
+  display: flex;
+  gap: 30px;
+  margin-right: 120px;
+}
+.hom_section {
+  width: 255px;
+  height: 265px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.hom_section h2 {
+  color: #162542;
+  font-family: Barlow;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 112.5% */
+  text-transform: uppercase;
+  width: 255px;
+}
+.hom_section p {
+  color: #7b8bad;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  width: 255px;
+}
+
+@media screen and (max-width: 769px) {
+  .homes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: none;
+  }
+  .imgs {
+    margin-left: 90px;
+    gap: 20px;
+  }
+  .homes_desktop-1 {
+    display: none;
+  }
+  .homes_desktop-2 {
+    display: none;
+  }
+  .homes_tablet-1 {
+    display: block;
+  }
+  .homes_tablet-2 {
+    display: block;
+  }
+  .hom_section {
+    width: 700px;
+    height: 108px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .hom_section p {
+    width: 398px;
+  }
+  .hom_section h2 {
+    width: 255px;
+    color: #162542;
+    font-family: Barlow;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; /* 112.5% */
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .homes {
+    padding-top: 420px;
+  }
+  .imgs {
+    margin-left: 98px;
+  }
+  .homes_tablet-1 {
+    display: none;
+  }
+  .homes_tablet-2 {
+    display: none;
+  }
+  .homes_phone-1 {
+    display: block;
+  }
+  .homes_phone-2 {
+    display: block;
+  }
+  .homes_img-rectange {
+    display: none;
+  }
+  .hom_section {
+    max-width: 377px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 151px;
+    text-align: center;
+    margin-left: 150px;
+    gap: 12px;
+  }
+  .hom_section p {
+    width: 327px;
+  }
+  .hom_section h2 {
+    width: 255px;
+  }
+}

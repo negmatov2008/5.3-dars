@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  position: relative;
+  max-width: 100%;
+  padding-top: 140px;
+}
+.footer h4 {
+  position: absolute;
+  top: 530px;
+  left: 600px;
+  color: #7b8bad;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 165px;
+}
+.card {
+  width: 255px;
+}
+.card img {
+  margin-bottom: 48px;
+}
+.card h3 {
+  color: #162542;
+  font-family: Barlow;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px; /* 116.667% */
+  text-transform: uppercase;
+  width: 220px;
+  margin-bottom: 24px;
+}
+.card p {
+  color: #7b8bad;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  width: 255px;
+}
+
+@media screen and (max-width: 769px) {
+  .cards {
+    flex-wrap: wrap;
+    max-width: 769px;
+    margin-left: 40px;
+  }
+  .footer h4 {
+    top: 900px;
+    left: 250px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .cards {
+    margin-left: 100px;
+  }
+  .footer{
+    padding-top: 70px;
+  }
+  .footer h4{
+    top: 1480px;
+    left: 115px;
+  }
+  .card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

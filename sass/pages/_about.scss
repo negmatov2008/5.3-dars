@@ -1,0 +1,117 @@
+.about {
+  display: flex;
+  height: 483px;
+  padding-top: 64px;
+  position: relative;
+}
+.about_top {
+  max-width: 445px;
+  padding-top: 130px;
+  margin-right: 125px;
+}
+.about_top h1 {
+  color: #162542;
+  font-family: Barlow;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 56px; /* 100% */
+  text-transform: uppercase;
+  width: 445px;
+  margin-bottom: 24px;
+}
+.about_top p {
+  color: #7b8bad;
+  width: 445px;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+  margin-bottom: 40px;
+}
+.about_top button {
+  border-radius: 8px;
+  background: #f16718;
+  padding: 16px 26px;
+  color: #fff;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.about_top button:hover {
+  background: #ff9b62;
+}
+.about_top span {
+  color: #7b8bad;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+}
+.abaut_img-rectange {
+  width: 155px;
+  height: 240px;
+  flex-shrink: 0;
+  position: absolute;
+  right: -18%;
+}
+.img-tablet {
+  display: none;
+}
+.img-phone {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+.img-desktop{
+    display: none;
+}
+.abaut_img-rectange{
+    display: none;
+}
+.img-tablet {
+    display: block;
+  }
+  .about_top {
+    max-width: 339px;
+    padding-top: 122px;
+    margin-right: 69px;
+  }
+  .about_top h1{
+    width: 339px;
+  }
+  .about_top p{
+    width: 339px;
+  }
+}
+@media screen and (max-width: 377px){
+    .img-tablet{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding-top:0 ;
+        
+    }
+    .img-phone {
+        display: block;
+        margin-top: 75px;
+        position: absolute;
+        right: -128px;
+      }
+      .ndr{
+        display: flex;
+        width: 340px;
+        align-items: center;
+      }
+}
